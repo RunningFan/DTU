@@ -1,0 +1,1538 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<project>
+  <fileVersion>2</fileVersion>
+  <fileChecksum>3402694818</fileChecksum>
+  <configuration>
+    <name>Debug</name>
+    <outputs>
+      <file>$PROJ_DIR$\src\APP\app_cfg.h</file>
+      <file>$PROJ_DIR$\src\APP\common.h</file>
+      <file>$PROJ_DIR$\src\APP\app.c</file>
+      <file>$PROJ_DIR$\src\APP\iap.c</file>
+      <file>$PROJ_DIR$\src\APP\iap.h</file>
+      <file>$PROJ_DIR$\src\CM3\stm32f10x.h</file>
+      <file>$PROJ_DIR$\src\APP\stm32f10x_conf.h</file>
+      <file>$PROJ_DIR$\src\BSP\bsp.c</file>
+      <file>$PROJ_DIR$\src\BSP\bsp.h</file>
+      <file>$PROJ_DIR$\src\BSP\stm32f10x_it.c</file>
+      <file>$PROJ_DIR$\src\BSP\stm32f10x_it.h</file>
+      <file>$PROJ_DIR$\src\CM3\system_stm32f10x.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\misc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_bkp.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_can.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_adc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_cec.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_crc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_dac.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_dma.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_dbgmcu.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_exti.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_fsmc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_flash.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_gpio.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_i2c.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_iwdg.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_pwr.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_rcc.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_led.h</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_led.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_rtc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_rtc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_sdio.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_spi.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_tim.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_usart.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_wwdg.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_button.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_button.h</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_flash.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_flash.h</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_rtc.h</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_timer.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_timer.h</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_usart.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_usart.h</file>
+      <file>$PROJ_DIR$\src\Startup\startup_stm32f10x_hd.s</file>
+      <file>$PROJ_DIR$\Debug\Obj\iap.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_bkp.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\misc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_rtc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_can.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_led.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_dac.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_dbgmcu.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_cec.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_gpio.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_cec.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_dma.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_crc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_dbgmcu.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_dac.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_exti.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\startup_stm32f10x_hd.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_flash.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_fsmc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_iwdg.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_pwr.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_i2c.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_rcc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_wwdg.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_crc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_rtc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\misc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\bsp.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_it.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\iap.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_adc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_stm32f10x.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_can.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_bkp.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_adc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_it.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_usart.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_timer.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\app.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_led.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\system_stm32f10x.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_button.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_rtc.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_flash.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_tim.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_sdio.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_spi.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_usart.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_wwdg.o</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_flash.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_timer.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_button.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_dma.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_exti.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\drv_usart.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_sdio.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_fsmc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_gpio.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_flash.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_i2c.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_iwdg.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_pwr.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_rcc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_rtc.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_spi.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_tim.pbi</file>
+      <file>$PROJ_DIR$\Debug\Obj\stm32f10x_usart.pbi</file>
+      <file>$PROJ_DIR$\Debug\Exe\ucos_template.out</file>
+      <file>$PROJ_DIR$\Debug\Obj\STM32F10x_uCOSii.pbd</file>
+      <file>$PROJ_DIR$\Debug\Exe\DTU_GPRS_IAP.bin</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 117</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\app.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 88</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\iap.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\BSP\bsp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 77</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\BSP\stm32f10x_it.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 78</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CM3\system_stm32f10x.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 81</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\misc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 76</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 50</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_bkp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_can.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 82</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 52</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_adc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 84</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_cec.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 58</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 74</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_dac.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 62</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_dma.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_dbgmcu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_exti.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 63</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_fsmc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 107</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 109</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_iwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 110</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 69</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_pwr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_rcc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_led.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 53</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 89</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 51</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 92</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 113</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 75</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_sdio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 95</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_tim.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 94</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_wwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 73</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 98</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_button.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 93</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_timer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 87</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 86</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Startup\startup_stm32f10x_hd.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\Debug\Exe\ucos_template.out</name>
+      <outputs>
+        <tool>
+          <name>OBJCOPY</name>
+          <file> 119</file>
+        </tool>
+      </outputs>
+    </file>
+  </configuration>
+  <configuration>
+    <name>Release</name>
+    <outputs>
+      <file>$PROJ_DIR$\src\APP\common.h</file>
+      <file>$PROJ_DIR$\src\APP\app.c</file>
+      <file>$PROJ_DIR$\src\APP\iap.c</file>
+      <file>$PROJ_DIR$\src\APP\iap.h</file>
+      <file>$PROJ_DIR$\src\CM3\stm32f10x.h</file>
+      <file>$PROJ_DIR$\src\BSP\bsp.c</file>
+      <file>$PROJ_DIR$\src\BSP\bsp.h</file>
+      <file>$PROJ_DIR$\src\BSP\stm32f10x_it.c</file>
+      <file>$PROJ_DIR$\src\BSP\stm32f10x_it.h</file>
+      <file>$PROJ_DIR$\src\CM3\system_stm32f10x.c</file>
+      <file>$PROJ_DIR$\src\Compress\adler32.c</file>
+      <file>$PROJ_DIR$\src\Compress\compress.c</file>
+      <file>$PROJ_DIR$\src\Compress\crc32.c</file>
+      <file>$PROJ_DIR$\src\Compress\deflate.c</file>
+      <file>$PROJ_DIR$\src\Compress\trees.c</file>
+      <file>$PROJ_DIR$\src\Compress\zutil.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\misc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_bkp.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_can.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_adc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_cec.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_crc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_dac.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_dma.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_dbgmcu.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_exti.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_fsmc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_flash.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_gpio.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_i2c.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_iwdg.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_pwr.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_rcc.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_led.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_rtc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_rtc.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_sdio.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_spi.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_tim.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_usart.c</file>
+      <file>$PROJ_DIR$\src\CPU\src\stm32f10x_wwdg.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_button.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_button.h</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_flash.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_flash.h</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_timer.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_usart.c</file>
+      <file>$PROJ_DIR$\src\Startup\startup_stm32f10x_hd.s</file>
+      <file>$PROJ_DIR$\Release\Obj\os_mem.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\statistic.o</file>
+      <file>$PROJ_DIR$\Release\Obj\os_tmr.pbi</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_tmr.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_task.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_q.c</file>
+      <file>$PROJ_DIR$\Release\Obj\os_q.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_dbg.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_exti.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_pwr.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\handle_led.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_iwdg.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32_spi_flash.o</file>
+      <file>$PROJ_DIR$\Release\Obj\statistic.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\handle_can.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32_spi_flash.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_timer.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_net.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\lib_str.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\handle_led.o</file>
+      <file>$PROJ_DIR$\Release\Obj\os_cpu_a.o</file>
+      <file>$PROJ_DIR$\src\APP\handle_button.c</file>
+      <file>$PROJ_DIR$\Release\Obj\handle_can.o</file>
+      <file>$PROJ_DIR$\Release\Obj\os_core.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_time.pbi</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_flag.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Ports\os_cpu_a.asm</file>
+      <file>$PROJ_DIR$\src\BSP\stm32_spi_flash.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_net.c</file>
+      <file>$PROJ_DIR$\src\uCOS-CPU\cpu_c.c</file>
+      <file>$PROJ_DIR$\src\uCOS-LIB\lib_mem.c</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_usart.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_gprs.pbi</file>
+      <file>$PROJ_DIR$\src\uCOS-LIB\lib_ascii.c</file>
+      <file>$PROJ_DIR$\src\uCOS-LIB\lib_str.c</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_usart.pbi</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_can.c</file>
+      <file>$PROJ_DIR$\Release\Obj\crc32.pbi</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Ports\os_cpu_c.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Ports\os_dbg.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_core.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_mbox.c</file>
+      <file>$PROJ_DIR$\Release\Obj\lib_mem.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_flash.pbi</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_mutex.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_mem.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_sem.c</file>
+      <file>$PROJ_DIR$\src\APP\handle_usart.c</file>
+      <file>$PROJ_DIR$\Release\Obj\fsm.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_dbgmcu.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\handle_usart.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\system_stm32f10x.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_sem.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_mbox.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_gpio.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_mutex.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_flag.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_can.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\adler32.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\app.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_task.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_fsmc.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\handle_usart.o</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_dac.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\trees.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_tmr.o</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_led.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\myscanf.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_bkp.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\duplicate.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\compress.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_it.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_flash.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\deflate.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_button.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_rtc.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_sdio.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\drv_sms.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\cpu_a.o</file>
+      <file>$PROJ_DIR$\Release\Obj\misc.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_can.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\lib_ascii.pbi</file>
+      <file>$PROJ_DIR$\src\APP\handle_led.c</file>
+      <file>$PROJ_DIR$\Release\Obj\bsp.pbi</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_sms.c</file>
+      <file>$PROJ_DIR$\Release\Obj\cpu_c.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_spi.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\os_cpu_c.pbi</file>
+      <file>$PROJ_DIR$\src\APP\handle_can.c</file>
+      <file>$PROJ_DIR$\Release\Obj\startup_stm32f10x_hd.o</file>
+      <file>$PROJ_DIR$\src\APP\myscanf.c</file>
+      <file>$PROJ_DIR$\src\uCOS-II\Src\os_time.c</file>
+      <file>$PROJ_DIR$\src\DevDriver\drv_gprs.c</file>
+      <file>$PROJ_DIR$\Release\Obj\zutil.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_cec.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_adc.pbi</file>
+      <file>$PROJ_DIR$\Release\Exe\STM32F10x_uCOSii.out</file>
+      <file>$PROJ_DIR$\Release\Obj\handle_button.o</file>
+      <file>$PROJ_DIR$\src\APP\statistic.c</file>
+      <file>$PROJ_DIR$\src\APP\duplicate.c</file>
+      <file>$PROJ_DIR$\src\APP\fsm.c</file>
+      <file>$PROJ_DIR$\src\uCOS-CPU\cpu_a.asm</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_tim.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_i2c.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\handle_button.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_wwdg.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_rcc.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_rtc.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_dma.pbi</file>
+      <file>$PROJ_DIR$\Release\Obj\stm32f10x_crc.pbi</file>
+    </outputs>
+    <file>
+      <name>[ROOT_NODE]</name>
+      <outputs>
+        <tool>
+          <name>ILINK</name>
+          <file> 144</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\app.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 107</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\iap.c</name>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 3</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\BSP\bsp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 131</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 6</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\BSP\stm32f10x_it.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 119</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 8</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CM3\system_stm32f10x.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 99</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 4</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Compress\adler32.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 106</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Compress\compress.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 118</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Compress\crc32.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 85</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Compress\deflate.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 121</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Compress\trees.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 112</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Compress\zutil.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 141</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\misc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 127</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_bkp.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 116</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_can.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 128</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_adc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 143</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_cec.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 142</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_crc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 157</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_dac.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 111</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_dma.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 156</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_dbgmcu.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 97</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_exti.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 56</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_fsmc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 109</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 120</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_gpio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 102</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_i2c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 151</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_iwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 59</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_pwr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 57</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_rcc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 154</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_led.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 114</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 123</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_rtc.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 155</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_sdio.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 124</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_spi.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 134</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_tim.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 150</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 83</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\CPU\src\stm32f10x_wwdg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 153</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_button.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 122</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 91</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 44</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_timer.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 64</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 79</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\Startup\startup_stm32f10x_hd.s</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 137</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_tmr.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 50</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 113</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_task.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 108</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_q.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 54</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\handle_button.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 152</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 145</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_flag.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 104</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Ports\os_cpu_a.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 68</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\BSP\stm32_spi_flash.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 63</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 60</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_net.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 65</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-CPU\cpu_c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 133</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-LIB\lib_mem.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 90</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-LIB\lib_ascii.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 129</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-LIB\lib_str.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 66</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_can.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 105</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Ports\os_cpu_c.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 135</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Ports\os_dbg.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 55</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_core.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 71</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_mbox.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 101</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_mutex.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 103</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_mem.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 48</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_sem.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 100</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\handle_usart.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 98</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 110</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\handle_led.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 58</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 67</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_sms.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 125</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\handle_can.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 62</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 70</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\myscanf.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 115</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-II\Src\os_time.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 72</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\DevDriver\drv_gprs.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 80</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 42</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\statistic.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 61</file>
+        </tool>
+        <tool>
+          <name>ICCARM</name>
+          <file> 49</file>
+        </tool>
+      </outputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\duplicate.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 117</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\APP\fsm.c</name>
+      <outputs>
+        <tool>
+          <name>BICOMP</name>
+          <file> 96</file>
+        </tool>
+      </outputs>
+      <inputs>
+        <tool>
+          <name>ICCARM</name>
+          <file> 0</file>
+        </tool>
+      </inputs>
+    </file>
+    <file>
+      <name>$PROJ_DIR$\src\uCOS-CPU\cpu_a.asm</name>
+      <outputs>
+        <tool>
+          <name>AARM</name>
+          <file> 126</file>
+        </tool>
+      </outputs>
+    </file>
+    <forcedrebuild>
+      <name>[MULTI_TOOL]</name>
+      <tool>ILINK</tool>
+    </forcedrebuild>
+  </configuration>
+</project>
+
+

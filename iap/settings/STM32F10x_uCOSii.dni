@@ -1,0 +1,218 @@
+[Stack]
+FillEnabled=0
+OverflowWarningsEnabled=1
+WarningThreshold=90
+SpWarningsEnabled=1
+WarnLogOnly=1
+UseTrigger=1
+TriggerName=main
+LimitSize=0
+ByteLimit=50
+[DebugChecksum]
+Checksum=1563855299
+[Exceptions]
+StopOnUncaught=_ 0
+StopOnThrow=_ 0
+[CallStack]
+ShowArgs=1
+[Disassembly]
+MixedMode=1
+[JLinkDriver]
+CStepIntDis=_ 0
+[SfrWindow]
+Show=1 1
+Sort=6 0
+[SWOTraceHWSettings]
+OverrideDefaultClocks=0
+CpuClock=72000000
+ClockAutoDetect=0
+ClockWanted=2000000
+JtagSpeed=2000000
+Prescaler=36
+TimeStampPrescIndex=0
+TimeStampPrescData=0
+PcSampCYCTAP=1
+PcSampPOSTCNT=15
+PcSampIndex=0
+DataLogMode=0
+ITMportsEnable=0
+ITMportsTermIO=0
+ITMportsLogFile=0
+ITMlogFile=$PROJ_DIR$\ITM.log
+[RegisterFilter]
+FilePath=_ ""
+UseFilter=_ 0
+[CodeCoverage]
+Enabled=_ 0
+[CallStackStripe]
+ShowTiming=1
+[Interrupts]
+Enabled=1
+[MemConfig]
+Base=1
+Manual=0
+Ddf=1
+TypeViol=0
+Stop=1
+[Simulator]
+Freq=10000000
+MultiCoreRunAll=1
+[struct_types]
+Fmt0=UARTTYPE-DataLen	4	0
+Fmt1=struct tm-tm_sec	3	0
+Fmt2=updateInfoType-update_readaddr	4	0
+Fmt3=updateInfoType-update_writeaddr	4	0
+[array_types]
+Fmt0=Byte[1200]	4	0
+Fmt1=byte[1000]	4	0
+Fmt2=byte[1024]	4	0
+Fmt3=byte[1200]	4	0
+Fmt4=byte[2000]	4	0
+Fmt5=byte[200]	4	0
+Fmt6=byte[4000]	4	0
+Fmt7=byte[4096]	4	0
+Fmt8=byte[4]	4	0
+Fmt9=byte[5000]	4	0
+Fmt10=byte[500]	4	0
+Fmt11=byte[5120]	4	0
+Fmt12=byte[60]	4	0
+Fmt13=byte[62]	4	0
+Fmt14=byte[75]	4	0
+Fmt15=byte[8]	4	0
+Fmt16=char[12]	4	0
+Fmt17=char[200]	5	0
+Fmt18=int8_t[10]	3	0
+Fmt19=int8_t[4]	3	0
+Fmt20=uint32_t[355]	3	0
+Fmt21=uint8_t[1024]	4	0
+Fmt22=uint8_t[10]	3	0
+Fmt23=uint8_t[1500]	4	0
+Fmt24=uint8_t[150]	4	0
+Fmt25=uint8_t[200]	4	0
+Fmt26=uint8_t[20]	4	0
+Fmt27=uint8_t[4]	4	0
+Fmt28=uint8_t[500]	4	0
+Fmt29=uint8_t[7]	4	0
+Fmt30=uint8_t[8]	4	0
+[watch_formats]
+Fmt0={W}42:NS	4	0
+Fmt1={W}42:QBufferfront	4	0
+Fmt2={W}42:QBufferrear	4	0
+Fmt3={W}42:Step	4	0
+Fmt4={W}42:TIM2_count	3	0
+Fmt5={W}42:TimeOutCnt	4	0
+Fmt6={W}42:addrFrame2	4	0
+Fmt7={W}42:check_time	3	0
+Fmt8={W}42:cnt	3	0
+Fmt9={W}42:fail_count	3	0
+Fmt10={W}42:g_FlashWriteAddr	4	0
+Fmt11={W}42:nextHour	3	0
+Fmt12={W}42:nextStep	4	0
+Fmt13={W}42:packTime	4	0
+Fmt14={W}42:paiqi3	3	0
+Fmt15={W}42:paiqi4	3	0
+Fmt16={W}42:prevHour	3	0
+Fmt17={W}42:receive_count	3	0
+Fmt18={W}42:startFlashTime	2	0
+Fmt19={W}42:tt	4	0
+[SWOTraceWindow]
+PcSampling=0
+InterruptLogs=0
+ForcedTimeStamps=0
+EventCPI=0
+EventEXC=0
+EventFOLD=0
+EventLSU=0
+EventSLEEP=0
+[PowerLog]
+LogEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=0
+Title_0=I0
+Symbol_0=0 4 1
+LiveEnabled=0
+LiveFile=PowerLogLive.log
+[DataLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+[EventLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+Title_0=Ch3
+Symbol_0=0 4 1
+Title_1=Ch2
+Symbol_1=0 4 1
+Title_2=Ch1
+Symbol_2=0 4 1
+Title_3=Ch0
+Symbol_3=0 4 1
+SumSortOrder=0
+[InterruptLog]
+LogEnabled=0
+SumEnabled=0
+GraphEnabled=0
+ShowTimeLog=1
+ShowTimeSum=1
+SumSortOrder=0
+[Log file]
+LoggingEnabled=_ 0
+LogFile=_ ""
+Category=_ 0
+[TermIOLog]
+LoggingEnabled=_ 0
+LogFile=_ ""
+[CallStackLog]
+Enabled=0
+[PowerProbe]
+Frequency=10000
+Probe0=I0
+ProbeSetup0=2 1 1 2 0 0
+[DriverProfiling]
+Enabled=0
+Mode=3
+Graph=0
+Symbiont=0
+Exclusions=
+[Disassemble mode]
+mode=0
+[Breakpoints2]
+Count=0
+[Aliases]
+A0=_ "C:\Documents and Settings\390436\桌面\stm3210e-eval\ucos_template\STM32F10x_uCOSii\Src\APP\stm32f10x_it.c" ""
+A1=_ "C:\Documents and Settings\390436\桌面\stm3210e-eval\ucos_template\STM32F10x_uCOSii\Src\uCOS-CPU\cpu_a.asm" ""
+A2=_ "C:\Documents and Settings\390436\桌面\stm3210e-eval\ucos_template\STM32F10x_uCOSii\Src\uCOS-II\Src\os_core.c" ""
+A3=_ "C:\Documents and Settings\390436\桌面\stm3210e-eval\ucos_template\STM32F10x_uCOSii\Src\uCOS-II\Src\os_task.c" ""
+A4=_ "C:\Documents and Settings\390436\桌面\stm3210e-eval\ucos_template\STM32F10x_uCOSii\Src\uCOS-II\Src\os_time.c" ""
+A5=_ "C:\Users\390663\Desktop\ftp iap\src\APP\app.c" ""
+A6=_ "C:\Users\Administrator\Desktop\STM32F10x_uCOSii_2015_04_09\src\APP\app.c" ""
+A7=_ "C:\Users\Administrator\Desktop\STM32F10x_uCOSii_2015_04_09\src\BSP\stm32_spi_flash.c" ""
+A8=_ "C:\Users\Administrator\Desktop\STM32F10x_uCOSii_2015_04_09\src\uCOS-II\Src\os_core.c" ""
+A9=_ "E:\GPRS\第二次送测20150418\src\APP\app.c" ""
+A10=_ "E:\GPRS\第二次送测20150418\src\uCOS-II\Ports\os_cpu_a.asm" ""
+A11=_ "E:\GPRS\第二次送测20150418\src\uCOS-II\Src\os_core.c" ""
+A12=_ "E:\GPRS\第二次送测20150418\src\uCOS-II\Src\os_mutex.c" ""
+A13=_ "E:\GPRS\第二次送测（解BUG）20150301\src\uCOS-II\Ports\os_cpu_a.asm" ""
+A14=_ "E:\GPRS\送测20160328\第二次送测（解BUG）20150301\src\APP\app.c" ""
+A15=_ "E:\GPRS\送测20160328\第一次送测20150328（测试问题更改）\src\APP\app.c" ""
+A16=_ "E:\GPRS\送测20160328\第一次送测20150414（测试问题更改）\src\APP\app.c" ""
+A17=_ "E:\GPRS\送测20160328\复件 第三次送测20160518\src\APP\app.c" ""
+A18=_ "E:\GPRS\送测单gprs\STM32F10x_uCOSii_2015_1_6(送测)\src\APP\app.c" "C:\Documents and Settings\390571\桌面\STM32F10x_uCOSii_2015_1_6(送测)\src\APP\app.c"
+A19=_ "E:\ST\STM32F10x_uCOSii\STM32F10x_uCOSii_2014_12_24\Src\APP\stm32_spi_flash.c" ""
+A20=_ "E:\ST\STM32F10x_uCOSii\STM32F10x_uCOSii_2014_12_24\Src\CPU\src\stm32f10x_can.c" ""
+A21=_ "E:\ST\SourceCode\STM32开发\STM32开发项目\STM32F10x_uCOSii_2014_12_26\Src\APP\stm32_spi_flash.c" ""
+A22=_ "F:\1.已进行项目\4.新架构GPRS\源程序\STM32F10x_uCOSii_2015_01_31\Src\APP\stm32_spi_flash.c" ""
+A23=_ "F:\GPRS其他版本\STM32F10x_uCOSii_2015_04_09\src\uCOS-II\Src\os_task.c" ""
+A24=_ "F:\ST\SourceCode\STM32F10x_uCOSii_2015_03_10\STM32F10x_uCOSii_2015_03_10\src\CPU\src\stm32f10x_gpio.c" ""
+A25=_ "H:\项目开发\多联机GPRS数据压缩及统计开发\STM32F10x_uCOSii_2015_12_16\src\BSP\stm32f10x_it.c" ""
+A26=_ "Z:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\src\APP\app.c" ""
+A27=_ "Z:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\src\APP\myscanf.c" ""
+A28=_ "Z:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\src\APP\statistic.c" ""
+Count=29
+SuppressDialog=1

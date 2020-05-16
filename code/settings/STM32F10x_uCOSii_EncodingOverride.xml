@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+
+<userOverrides>
+  <override>
+    <path>C:\Users\sean\Desktop\GPRS\STM32F10x_uCOSii_2015_12_03\STM32F10x_uCOSii_2015_12_03\src\APP\app.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>C:\Users\sean\Desktop\STM32F10x_uCOSii_2015_12_16A\src\APP\data_statistic.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>C:\Users\sean\Desktop\STM32F10x_uCOSii_2015_12_16A\src\APP\data_statistic.h</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>D:\&#x5F00;&#x53D1;\&#x8BBe;&#x8BA1;&#x89C4;&#x8303;\&#x81eA;&#x5236;GPRS&#x5F00;&#x53D1;\&#x534e;&#x79D1;GPRS&#x7248;&#x672C;\STM32F10x_uCOSii_2015_07_17\src\APP\app.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>D:\&#x5F00;&#x53D1;\&#x8BBe;&#x8BA1;&#x89C4;&#x8303;\&#x81eA;&#x5236;GPRS&#x5F00;&#x53D1;\&#x534e;&#x79D1;GPRS&#x7248;&#x672C;\STM32F10x_uCOSii_2015_11_25\debug\List\ucos_template.map</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\GPRS\&#x7B2C;&#x4e8C;&#x6B21;&#x9001;&#x6D4B;20150418\src\APP\duplicate.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\GPRS\&#x7B2C;&#x4e8C;&#x6B21;&#x9001;&#x6D4B;20150429&#x589e;&#x52A0;&#x673A;&#x578B;ID\src\APP\duplicate.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\GPRS\&#x9001;&#x6D4B;20160328\&#x7B2C;&#x4e09;&#x6B21;&#x9001;&#x6D4B;20160507\src\APP\duplicate.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\GPRS\&#x9001;&#x6D4B;20160328\&#x7B2C;&#x56DB;&#x6B21;&#x9001;&#x6D4B;20160606&#x6545;&#x4F18;&#x5316;&#x969C;&#x4e0A;&#x62A5;\src\APP\duplicate.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>E:\GPRS\&#x9001;&#x6D4B;20160328\&#x7B2C;&#x4e00;&#x6B21;&#x9001;&#x6D4B;20150414&#xFF08;&#x6D4B;&#x8BD5;&#x95ee;&#x9898;&#x66F4;&#x6539;&#xFF09;\src\APP\duplicate.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>H:\&#x9879;&#x76ee;&#x5F00;&#x53D1;\&#x591A;&#x8054;&#x673A;GPRS&#x6570;&#x636e;&#x538B;&#x7F29;&#x53CA;&#x7eDF;&#x8BA1;&#x5F00;&#x53D1;\STM32F10x_uCOSii_2015_12_03\src\APP\Duplicate.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+  <override>
+    <path>H:\&#x9879;&#x76ee;&#x5F00;&#x53D1;\&#x591A;&#x8054;&#x673A;GPRS&#x6570;&#x636e;&#x538B;&#x7F29;&#x53CA;&#x7eDF;&#x8BA1;&#x5F00;&#x53D1;\STM32F10x_uCOSii_2015_12_03\src\APP\app.c</path>
+    <encoding>UTF-8</encoding>
+  </override>
+</userOverrides>
+
+

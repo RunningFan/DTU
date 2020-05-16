@@ -1,0 +1,327 @@
+###############################################################################
+#                                                                             #
+#     IAR Assembler V7.10.3.6832/W32 for ARM 26/Aug/2016  15:25:03            #
+#     Copyright 1999-2014 IAR Systems AB.                                     #
+#                                                                             #
+#           Source file   =  Z:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\src\uCOS-CPU\cpu_a.asm#
+#           List file     =  Z:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\Debug\List\cpu_a.lst#
+#           Object file   =  Z:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\Debug\Obj\cpu_a.o#
+#           Command line  =  Z:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\src\uCOS-CPU\cpu_a.asm #
+#                            -OZ:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\Debug\Obj\ #
+#                            -s+ -M<> -w+ -r                                  #
+#                            -LZ:\ProjectDevlop\GPRS_MODULE_CAN\整改第六次更改送测版本\Debug\List\ #
+#                            -t8 --cpu Cortex-M3 --fpu None                   #
+#                                                                             #
+###############################################################################
+
+    1                           ;*********************************************
+                                ***********************************************
+                                ************
+    2                           ;                                             
+                                  uC/CPU
+    3                           ;                                    CPU
+                                 CONFIGURATION & PORT LAYER
+    4                           ;
+    5                           ;                          (c) Copyright
+                                 2004-2008; Micrium, Inc.; Weston, FL
+    6                           ;
+    7                           ;               All rights reserved. 
+                                 Protected by international copyright
+                                 laws.
+    8                           ;
+    9                           ;               uC/CPU is provided in source
+                                 form for FREE evaluation, for educational
+   10                           ;               use or peaceful research.  If
+                                 you plan on using uC/CPU in a commercial
+   11                           ;               product you need to contact
+                                 Micrium to properly license its use in
+                                 your
+   12                           ;               product.  We provide ALL the
+                                 source code for your convenience and
+                                 to
+   13                           ;               help you experience uC/CPU. 
+                                 The fact that the source code is provided
+   14                           ;               does NOT mean that you can use
+                                 it without paying a licensing fee.
+   15                           ;
+   16                           ;               Knowledge of the source code
+                                 may NOT be used to develop a similar
+                                 product.
+   17                           ;
+   18                           ;               Please help us continue to
+                                 provide the Embedded community with the
+                                 finest
+   19                           ;               software available.  Your
+                                 honesty is greatly appreciated.
+   20                           ;*********************************************
+                                ***********************************************
+                                ************
+   21                           
+   22                           
+   23                           ;*********************************************
+                                ***********************************************
+                                ************
+   24                           ;
+   25                           ;                                           
+                                 CPU PORT FILE
+   26                           ;
+   27                           ;                                           
+                                 ARM-Cortex-M3
+   28                           ;                                           
+                                 IAR C Compiler
+   29                           ;
+   30                           ; Filename      : cpu_a.asm
+   31                           ; version       : V1.20
+   32                           ; Programmer(s) : JJL
+   33                           ;*********************************************
+                                ***********************************************
+                                ************
+   34                           
+   35                           
+   36                           ;*********************************************
+                                ***********************************************
+                                ************
+   37                           ;                                          
+                                 PUBLIC FUNCTIONS
+   38                           ;*********************************************
+                                ***********************************************
+                                ************
+   39                           
+   40                                   PUBLIC  CPU_IntDis
+   41                                   PUBLIC  CPU_IntEn
+   42                           
+   43                                   PUBLIC  CPU_SR_Save
+   44                                   PUBLIC  CPU_SR_Restore
+   45                           
+   46                                   PUBLIC  CPU_CntLeadZeros
+   47                                   PUBLIC  CPU_RevBits
+   48                           
+   49                                   PUBLIC  CPU_WaitForInt
+   50                                   PUBLIC  CPU_WaitForExcept
+   51                           
+   52                           
+   53                           ;*********************************************
+                                ***********************************************
+                                ************
+   54                           ;                                      CODE
+                                 GENERATION DIRECTIVES
+   55                           ;*********************************************
+                                ***********************************************
+                                ************
+   56                           
+   57                                   RSEG CODE:CODE:NOROOT(2)
+   58                           
+   59                           
+   60                           ;$PAGE
+   61                           ;*********************************************
+                                ***********************************************
+                                ************
+   62                           ;                                    DISABLE
+                                 and ENABLE INTERRUPTS
+   63                           ;
+   64                           ; Description: Disable/Enable interrupts.
+   65                           ;
+   66                           ; Prototypes : void  CPU_IntDis(void);
+   67                           ;              void  CPU_IntEn (void);
+   68                           ;*********************************************
+                                ***********************************************
+                                ************
+   69                           
+   70                           CPU_IntDis
+   71    00000000 72B6                  CPSID   I
+   72    00000002 7047                  BX      LR
+   73                           
+   74                           
+   75                           CPU_IntEn
+   76    00000004 62B6                  CPSIE   I
+   77    00000006 7047                  BX      LR
+   78                           
+   79                           
+   80                           ;*********************************************
+                                ***********************************************
+                                ************
+   81                           ;                                     
+                                 CRITICAL SECTION FUNCTIONS
+   82                           ;
+   83                           ; Description : Disable/Enable interrupts by
+                                 preserving the state of interrupts.  Generally
+                                 speaking, the
+   84                           ;               state of the interrupt disable
+                                 flag is stored in the local variable 'cpu_sr'
+                                 & interrupts
+   85                           ;               are then disabled ('cpu_sr' is
+                                 allocated in all functions that need to
+                                 disable interrupts).
+   86                           ;               The previous interrupt state
+                                 is restored by copying 'cpu_sr' into the CPU's
+                                 status register.
+   87                           ;
+   88                           ; Prototypes  : CPU_SR  CPU_SR_Save  
+                                 (void);
+   89                           ;               void    CPU_SR_Restore(CPU_SR
+                                 cpu_sr);
+   90                           ;
+   91                           ; Note(s)     : (1) These functions are used
+                                 in general like this:
+   92                           ;
+   93                           ;                   void  Task (void
+                                 *p_arg)
+   94                           ;                   {
+   95                           ;                                             
+                                                  /* Allocate storage for CPU
+                                 status register */
+   96                           ;                   #if (CPU_CFG_CRITICAL_METH
+                                OD == CPU_CRITICAL_METHOD_STATUS_LOCAL)
+   97                           ;                       CPU_SR  cpu_sr;
+   98                           ;                   #endif
+   99                           ;
+  100                           ;                            :
+  101                           ;                            :
+  102                           ;                       CPU_CRITICAL_ENTER(); 
+                                                  /* cpu_sr = CPU_SR_Save();   
+                                               */
+  103                           ;                            :
+  104                           ;                            :
+  105                           ;                       CPU_CRITICAL_EXIT();  
+                                                  /* CPU_SR_Restore(cpu_sr);   
+                                               */
+  106                           ;                            :
+  107                           ;                            :
+  108                           ;                   }
+  109                           ;*********************************************
+                                ***********************************************
+                                ************
+  110                           
+  111                           CPU_SR_Save
+  112    00000008 EFF31080              MRS     R0, PRIMASK                    
+                                                 ; Set prio int mask to mask
+                                                 all (except faults)
+  113    0000000C 72B6                  CPSID   I
+  114    0000000E 7047                  BX      LR
+  115                           
+  116                           
+  117                           CPU_SR_Restore                                
+                                  ; See Note #2.
+  118    00000010 80F31088              MSR     PRIMASK, R0
+  119    00000014 7047                  BX      LR
+  120                           
+  121                           
+  122                           ;$PAGE
+  123                           ;*********************************************
+                                ***********************************************
+                                ************
+  124                           ;                                        
+                                 COUNT LEADING ZEROS
+  125                           ;
+  126                           ; Description : Counts the number of binary
+                                 zero bits before the first binary one bit in
+                                 the argument.
+  127                           ;               If the argument is zero, the
+                                 value 32 is returned.
+  128                           ;
+  129                           ; Prototypes  : CPU_INT32U  CPU_CntLeadZeros
+                                 (CPU_INT32U  val)
+  130                           ;
+  131                           ; Argument(s) : val     variable to count
+                                 leading zeros
+  132                           ;*********************************************
+                                ***********************************************
+                                ************
+  133                           
+  134                           CPU_CntLeadZeros:
+  135    00000016 B0FA80F0              CLZ     R0, R0                         
+                                                 ; Count leading zeros
+  136    0000001A 7047                  BX      LR
+  137                           
+  138                           
+  139                           ;*********************************************
+                                ***********************************************
+                                ************
+  140                           ;                                            
+                                 REVERSE BITS
+  141                           ;
+  142                           ; Description : Reverses the bits in the
+                                 argument.
+  143                           ;
+  144                           ; Prototypes  : CPU_INT32U  CPU_RevBits
+                                 (CPU_INT32U  val)
+  145                           ;
+  146                           ; Argument(s) : val     variable to reverse
+  147                           ;*********************************************
+                                ***********************************************
+                                ************
+  148                           
+  149                           CPU_RevBits:
+  150    0000001C 90FAA0F0              RBIT    R0, R0                         
+                                                 ; Reverse bits
+  151    00000020 7047                  BX      LR
+  152                           
+  153                           
+  154                           ;$PAGE
+  155                           ;*********************************************
+                                ***********************************************
+                                ************
+  156                           ;                                         WAIT
+                                 FOR INTERRUPT
+  157                           ;
+  158                           ; Description : Enters sleep state, which will
+                                 be exited when an interrupt is received.
+  159                           ;
+  160                           ; Prototypes  : void  CPU_WaitForInt
+                                 (void)
+  161                           ;
+  162                           ; Argument(s) : none.
+  163                           ;*********************************************
+                                ***********************************************
+                                ************
+  164                           
+  165                           CPU_WaitForInt:
+  166    00000022 30BF                  WFI                                    
+  ; Wait for interrupt
+  167    00000024 7047                  BX      LR
+  168                           
+  169                           
+  170                           ;*********************************************
+                                ***********************************************
+                                ************
+  171                           ;                                         WAIT
+                                 FOR EXCEPTION
+  172                           ;
+  173                           ; Description : Enters sleep state, which will
+                                 be exited when an exception is received.
+  174                           ;
+  175                           ; Prototypes  : void  CPU_WaitForExcept
+                                 (void)
+  176                           ;
+  177                           ; Argument(s) : none.
+  178                           ;*********************************************
+                                ***********************************************
+                                ************
+  179                           
+  180                           CPU_WaitForExcept:
+  181    00000026 20BF                  WFE                                    
+  ; Wait for exception
+  182    00000028 7047                  BX      LR
+  183                           
+  184                           
+  185                           ;$PAGE
+  186                           ;*********************************************
+                                ***********************************************
+                                ************
+  187                           ;                                     CPU
+                                 ASSEMBLY PORT FILE END
+  188                           ;*********************************************
+                                ***********************************************
+                                ************
+  189                           
+  190                                   END
+##############################
+#           CRC:0            #
+#        Errors:   0         #
+#        Warnings: 0         #
+#         Bytes: 42          #
+##############################
+
+
+
+
